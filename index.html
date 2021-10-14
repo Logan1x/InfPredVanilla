@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>InfPred</title>
+    <style>
+      :root {
+        font-family: "Rubik", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="
+      bg-gray-900
+      text-white text-lg text-center
+      min-h-screen
+      flex flex-col
+    "
+  >
+    <!-- TODO:Turn on the navbar -->
+    <!-- <nav class="h-20 flex justify-between items-center w-4/5 mx-auto">
+      <p class="flex">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+          ></path></svg
+        >InfPred
+      </p>
+      <div class="flex space-x-2">
+        <p>Predict</p>
+        <p>About</p>
+        <p>Team</p>
+      </div>
+    </nav> -->
+
+    <main class="flex">
+      <!-- sidebar -->
+      <aside class="hidden md:block md:w-1/6">
+        <nav
+          class="w-full min-h-screen bg-gray-600 text-white text-lg px-4 py-6"
+        >
+          <!-- logo and website title -->
+          <div class="flex flex-col justify-center items-center">
+            <svg
+              class="w-16 h-16"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+              ></path>
+            </svg>
+            <h1 class="text-2xl font-bold">InfPred</h1>
+          </div>
+
+          <ul class="mx-6 text-left my-4 space-y-1">
+            <li>Home</li>
+            <li>Predict</li>
+            <li>About</li>
+            <li>Team</li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="md:w-5/6 mx-auto">
+        <div class="my-4 mx-2 text-3xl md:text-4xl text-blue-600">
+          <h1>InfPred Proteins</h1>
+        </div>
+        <div
+          class="flex justify-center items-center flex-wrap md:w-3/4 mx-auto"
+        >
+          <div class="bg-gray-100 text-black w-60 p-4 rounded m-2">
+            <img
+              class="w-40 h-40 mx-auto"
+              src="./SARS-CoV-2_without_background.png"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              necessitatibu
+            </p>
+            <button
+              class="bg-blue-600 text-white px-2 py-1 rounded shadow mt-2"
+            >
+              Find More
+            </button>
+          </div>
+
+          <div class="bg-gray-100 text-black w-60 p-4 rounded m-2">
+            <img
+              class="w-40 h-40 mx-auto"
+              src="./SARS-CoV-2_without_background.png"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              necessitatibu
+            </p>
+            <button
+              class="bg-blue-600 text-white px-2 py-1 rounded shadow mt-2"
+            >
+              Find More
+            </button>
+          </div>
+
+          <div class="bg-gray-100 text-black w-60 p-4 rounded m-2">
+            <img
+              class="w-40 h-40 mx-auto"
+              src="./SARS-CoV-2_without_background.png"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              necessitatibu
+            </p>
+            <button
+              class="bg-blue-600 text-white px-2 py-1 rounded shadow mt-2"
+            >
+              Find More
+            </button>
+          </div>
+
+          <div class="bg-gray-100 text-black w-60 p-4 rounded m-2">
+            <img
+              class="w-40 h-40 mx-auto"
+              src="./SARS-CoV-2_without_background.png"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              necessitatibu
+            </p>
+            <button
+              class="bg-blue-600 text-white px-2 py-1 rounded shadow mt-2"
+            >
+              Find More
+            </button>
+          </div>
+
+          <div class="bg-gray-100 text-black w-60 p-4 rounded m-2">
+            <img
+              class="w-40 h-40 mx-auto"
+              src="./SARS-CoV-2_without_background.png"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              necessitatibu
+            </p>
+            <button
+              class="bg-blue-600 text-white px-2 py-1 rounded shadow mt-2"
+            >
+              Find More
+            </button>
+          </div>
+          <div class="bg-gray-100 text-black w-60 p-4 rounded m-2">
+            <img
+              class="w-40 h-40 mx-auto"
+              src="./SARS-CoV-2_without_background.png"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              necessitatibu
+            </p>
+            <button
+              class="bg-blue-600 text-white px-2 py-1 rounded shadow mt-2"
+            >
+              Find More
+            </button>
+          </div>
+          <div class="bg-gray-100 text-black w-60 p-4 rounded m-2">
+            <img
+              class="w-40 h-40 mx-auto"
+              src="./SARS-CoV-2_without_background.png"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              necessitatibu
+            </p>
+            <button
+              class="bg-blue-600 text-white px-2 py-1 rounded shadow mt-2"
+            >
+              Find More
+            </button>
+          </div>
+          <div class="bg-gray-100 text-black w-60 p-4 rounded m-2">
+            <img
+              class="w-40 h-40 mx-auto"
+              src="./SARS-CoV-2_without_background.png"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              necessitatibu
+            </p>
+            <button
+              class="bg-blue-600 text-white px-2 py-1 rounded shadow mt-2"
+            >
+              Find More
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

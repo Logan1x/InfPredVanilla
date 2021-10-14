@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body
+    class="
+      bg-gray-900
+      text-white text-center
+      min-h-screen min-w-screen
+      flex flex-col
+      justify-center
+      items-center
+      border
+      text-lg
+    "
+  >
+    <div class="my-4 mx-2 text-3xl md:text-4xl text-white font-semibold">
+      <h1>Predict</h1>
+    </div>
+    <div class="w-3/4">
+      <form class="flex flex-col justify-center items-center w-full">
+        <label for="" class="text-left"
+          >Please Enter Protein Sequence Below</label
+        >
+        <textarea
+          name=""
+          id=""
+          class="h-24 w-3/4 rounded-lg my-2 p-2 text-black text-lg"
+          placeholder="Enter Protein Sequence To Compute..."
+        ></textarea>
+        <label for="" class="my-2"
+          >Or select a fasta file <input type="file" name="" id="" />
+        </label>
+        <p class="mt-4">Select Protein Below</p>
+        <div class="flex my-4">
+          <div
+            class="
+              flex flex-col
+              mx-4
+              bg-gray-50
+              px-3
+              py-2
+              w-20
+              text-black text-left
+              rounded
+            "
+          >
+            <label for=""
+              ><input class="mx-1" type="radio" name="" id="" />HA</label
+            >
+            <label for=""
+              ><input class="mx-1" type="radio" name="" id="" />HA</label
+            >
+            <label for=""
+              ><input class="mx-1" type="radio" name="" id="" />HA</label
+            >
+            <label for=""
+              ><input class="mx-1" type="radio" name="" id="" />HA</label
+            >
+            <label for=""
+              ><input class="mx-1" type="radio" name="" id="" />HA</label
+            >
+          </div>
+
+          <div
+            class="
+              flex flex-col
+              mx-4
+              bg-gray-50
+              px-3
+              py-2
+              w-20
+              text-black text-right
+              rounded
+            "
+          >
+            <label for=""
+              ><input class="mx-1" type="radio" name="" id="" />HA</label
+            >
+            <label for=""
+              ><input class="mx-1" type="radio" name="" id="" />HA</label
+            >
+            <label for=""
+              ><input class="mx-1" type="radio" name="" id="" />HA</label
+            >
+            <label for=""
+              ><input class="mx-1" type="radio" name="" id="" />HA</label
+            >
+            <label for=""
+              ><input class="mx-1" type="radio" name="" id="" />HA</label
+            >
+          </div>
+        </div>
+
+        <button class="bg-blue-600 text-white px-4 py-1 rounded" type="submit">
+          Predict
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
