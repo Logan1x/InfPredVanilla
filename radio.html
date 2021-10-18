@@ -15,17 +15,29 @@
       bg-gray-900
       text-white text-center
       min-h-screen min-w-screen
-      flex flex-col
-      justify-center
-      items-center
+      
       border
       text-lg
     "
-  >
+  ><div class="h-24 w-full border-bottom bg-gray-800 text-white">
+    <div class="flex justify-between h-full items-center w-4/5 mx-auto">
+      <p class="text-2xl">
+        <a href="/">InfPred</a>
+      </p>
+      <div class="flex space-x-4 text-lg">
+        <p class="rounded hover:bg-gray-500 px-2 py-1">
+          <a href="./predictIndex.html">Predict</a>
+        </p>
+        <p class="rounded hover:bg-gray-500 px-2 py-1">
+          <Link to="/about">About</Link>
+        </p>
+      </div>
+    </div>
+  </div>
     <div class="my-4 mx-2 text-3xl md:text-4xl text-white font-semibold">
       <h1>Predict</h1>
     </div>
-    <div class="w-3/4">
+    <div class="w-3/4 flex flex-col mx-auto justify-center items-center">
       <form class="flex flex-col justify-center items-center w-full">
         <label for="" class="text-left"
           >Please Enter Protein Sequence Below</label
@@ -86,10 +98,10 @@
               ><input class="mx-1" type="radio" name="" id="" />HA</label
             >
             <label for=""
-              ><input class="mx-1" type="radio" name="" id="" />HA</label
+              ><input class="mx-1" type="radio" name="" id="" />PA</label
             >
             <label for=""
-              ><input class="mx-1" type="radio" name="" id="" />HA</label
+              ><input class="mx-1" type="radio" name="" id="" />PB</label
             >
             <label for=""
               ><input class="mx-1" type="radio" name="" id="" />HA</label
