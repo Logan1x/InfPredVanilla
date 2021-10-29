@@ -8,7 +8,19 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Predict</title>
+    <style>
+      :root {
+        font-family: "Rubik", sans-serif;
+      }
+    </style>
   </head>
   <body
     class="
@@ -38,11 +50,11 @@
     <div class="w-3/4 flex flex-col mx-auto justify-center items-center">
       <form class="flex flex-col justify-center items-center w-full">
         <label for="" class="text-left"
-          >Please Enter Protein Sequence Below</label
+          >Please Enter Protein Sequence Below (or use <span class="border-2 border-blue-500 p-1 rounded hover:bg-blue-500 cursor-pointer" id="fillExampleSequence" > example</span> sequence)</label
         >
         <textarea
           name=""
-          id=""
+          id="handleInput"
           class="h-24 w-3/4 rounded-lg my-2 p-2 text-black text-lg"
           placeholder="Enter Protein Sequence To Compute..."
         ></textarea>
@@ -58,26 +70,39 @@
               bg-gray-50
               px-3
               py-2
-              w-20
+              w-30
               text-black text-left
               rounded
             "
           >
-            <label for=""
-              ><input class="mx-1" type="radio" name="" id="" />HA</label
-            >
-            <label for=""
-              ><input class="mx-1" type="radio" name="" id="" />HA</label
-            >
-            <label for=""
-              ><input class="mx-1" type="radio" name="" id="" />HA</label
-            >
-            <label for=""
-              ><input class="mx-1" type="radio" name="" id="" />HA</label
-            >
-            <label for=""
-              ><input class="mx-1" type="radio" name="" id="" />HA</label
-            >
+           
+
+            <div>
+              <input type="radio" id="HA" name="drone" value="huey"
+                     checked>
+              <label for="HA">HA</label>
+            </div>
+            <div>
+              <input type="radio" id="PA" name="drone" value="huey"
+                     >
+              <label for="PA">PA</label>
+            </div>
+            <div>
+              <input type="radio" id="PB1" name="drone" value="huey"
+                     >
+              <label for="PB1">PB1</label>
+            </div>
+            <div>
+              <input type="radio" id="PB2" name="drone" value="huey"
+                     >
+              <label for="PB2">PB2</label>
+            </div>
+            <div>
+              <input type="radio" id="NP" name="drone" value="huey"
+                     >
+              <label for="NP">NP</label>
+            </div>
+
           </div>
 
           <div
@@ -87,26 +112,82 @@
               bg-gray-50
               px-3
               py-2
-              w-20
-              text-black text-right
+              w-30
+              text-black text-left
               rounded
             "
           >
-            <label for=""
-              ><input class="mx-1" type="radio" name="" id="" />HA</label
-            >
-            <label for=""
-              ><input class="mx-1" type="radio" name="" id="" />PA</label
-            >
-            <label for=""
-              ><input class="mx-1" type="radio" name="" id="" />PB</label
-            >
-            <label for=""
-              ><input class="mx-1" type="radio" name="" id="" />HA</label
-            >
-            <label for=""
-              ><input class="mx-1" type="radio" name="" id="" />HA</label
-            >
+            <div>
+              <input type="radio" id="NA" name="drone" value="huey"
+                     >
+              <label for="NA">NA</label>
+            </div>
+            <div>
+              <input type="radio" id="M1" name="drone" value="huey"
+                     >
+              <label for="M1">M1</label>
+            </div>
+            <div>
+              <input type="radio" id="M2" name="drone" value="huey"
+                     >
+              <label for="M2">M2</label>
+            </div>
+            <div>
+              <input type="radio" id="NS1" name="drone" value="huey"
+                     >
+              <label for="NS1">NS1</label>
+            </div>
+            <div>
+              <input type="radio" id="NS2" name="drone" value="huey"
+                     >
+              <label for="NS2">NS2</label>
+            </div>
+
+          </div>
+
+          <div
+            class="
+              flex flex-col
+              mx-4
+              bg-gray-50
+              px-3
+              py-2
+              w-30
+              text-black text-left
+              rounded
+            "
+          >
+           
+            
+            
+            <div>
+              <input type="radio" id="PB1F2" name="drone" value="huey"
+                     >
+              <label for="PB1F2">PB1F2</label>
+            </div>
+            
+            <div>
+              <input type="radio" id="PB1-N40" name="drone" value="huey"
+                     >
+              <label for="PB1-N40">PB1-N40</label>
+            </div>
+            <div>
+              <input type="radio" id="PA-N155" name="drone" value="huey"
+                     >
+              <label for="PA-N155">PA-N155</label>
+            </div>
+
+            <div>
+              <input type="radio" id="PA-N182" name="drone" value="huey"
+                     >
+              <label for="PA-N182">PA-N182</label>
+            </div>
+
+            <div>
+              <input type="radio" id="huey" name="drone" value="huey"
+                     >
+              <label for="huey">PAX</label>
+            </div>
           </div>
         </div>
 
@@ -115,5 +196,12 @@
         </button>
       </form>
     </div>
+    <script>
+      const addExampleSeq = document.getElementById('fillExampleSequence')
+      const handleInput = document.getElementById('handleInput')
+      addExampleSeq.addEventListener('click', ()=>{
+        handleInput.textContent = ">Seq1\nasdjhadsjfhsdjahdslfahsld"
+      })
+    </script>
   </body>
 </html>
